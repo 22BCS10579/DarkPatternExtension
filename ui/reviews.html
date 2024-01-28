@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    .open-review-portal {
+      border: 2px solid blue;
+      padding: 1rem;
+      border-radius: 0.5rem;
+      box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.15);
+    }
+
+    .open-review-portal *{
+      font-family: sans-serif;
+    }
+
+    .flex{
+      display: flex;
+    }
+
+    .flex-col{
+      flex-direction: column;
+    }
+
+    .justify-between{
+      justify-content: space-between;
+    }
+
+    ul{
+      list-style: none;
+      padding: 0;
+      padding-right: 20px;
+    }
+
+    .add-review-btn{
+      background-color: #fcba03;
+      border: none;
+      border-radius: 5px;
+      padding: 10px;
+      cursor: pointer;
+    }
+
+    h5{
+      color: green;
+    }
+
+    .items-center{
+      align-items: center;
+    }
+
+    .reviews{
+      gap: 5px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .reviews li{
+      border: 2px solid #b3b3b3;
+      border-radius: 5px;
+      padding: 5px;
+      width: 100%;
+    }
+
+    .review-date{
+      color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="open-review-portal border-2 border-slate-300 p-3 rounded-lg shadow-lg">
+    <h3 class="text-2xl">Open Ecommerce review Portal</h3>
+    <div class="flex justify-between">
+      <h5 class="text-green-600"> 36 reviews posted </h5>
+      <button class="add-review-btn">Add a review</button>
+    </div>
+
+    <ul class="reviews flex flex-col">
+      <li>
+        <p>
+          After using this product for a few weeks, I have mixed feelings. On the positive side, it has some fantastic features that enhance my experience. However, I've encountered a couple of issues that are a bit frustrating. It's not perfect, but it gets the job done. </p>
+        <label class="review-date">20 Jan, 2024</label>
+      </li> 
+
+      <li>
+        <p>
+          Initially, I was excited about this product, but I've been disappointed with its durability. It started showing signs of wear and tear sooner than expected. While it has some good features, I expected it to last longer. A bit disappointed.</p>
+        <label class="review-date">17 Jan, 2024</label>
+      </li> 
+
+      <li>
+        <p>
+          The design of this product is sleek, and it looks great. However, there are some areas where it could be improved. The user interface is a bit clunky, and I've had a couple of minor issues. Overall, it's decent, but there's room for improvement.</p>
+        <label class="review-date">11 Feb, 2023</label>
+      </li> 
+    </ul>
+
+  </div>
+</body>
+
+</html>
